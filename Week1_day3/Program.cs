@@ -68,33 +68,70 @@ namespace Week1_day3
             //    Console.WriteLine("That's not really your age.");
             //}
 
-            Console.WriteLine("How many points did you earn?");
-            int pointsEarned = int.Parse(Console.ReadLine());
+            //Console.WriteLine("How many points did you earn?");
+            //int pointsEarned = int.Parse(Console.ReadLine());
 
-            switch (pointsEarned)
+            //switch (pointsEarned)
+            //{
+            //    case 0:
+            //        Console.WriteLine("You lose");
+            //        break;
+            //    case 1:
+            //        Console.WriteLine("Needs practice");
+            //        break;
+            //    case 2:
+            //        Console.WriteLine("On target.");
+            //        break;
+            //    case 3:
+            //        Console.WriteLine("Superstar");
+            //        break;
+            //    case 4:
+            //        Console.WriteLine("Overachiever.");
+            //        break;
+            //    case 5:
+            //        Console.WriteLine("You cheated.");
+            //        break;
+            //    default:
+            //        Console.WriteLine("Invalid score entered.");
+            //        break;
+            //}
+
+            //Practice problem
+
+
+            //Console.WriteLine("How much was the bill?");
+            //int dinnerNumber = 4;
+            //int dinnerBill = 13;
+            //int billTotal = dinnerNumber * dinnerBill;
+            //Console.WriteLine(billTotal);
+
+            //Next thing on slide. Replace hard code with user input.
+
+            Console.WriteLine("How much was the bill?");
+
+            Console.WriteLine("How many people were there?");
+            int userDinnerNumber = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("How much did each dinner cost?");
+            int userDinnerBill = int.Parse(Console.ReadLine());
+
+            int userBillTotal = userDinnerNumber * userDinnerBill;
+            Console.WriteLine("Your bill total is $" + userBillTotal);
+
+            double newBill;
+
+            if (userBillTotal >= 50)
             {
-                case 0:
-                    Console.WriteLine("You lose");
-                    break;
-                case 1:
-                    Console.WriteLine("Needs practice");
-                    break;
-                case 2:
-                    Console.WriteLine("On target.");
-                    break;
-                case 3:
-                    Console.WriteLine("Superstar");
-                    break;
-                case 4:
-                    Console.WriteLine("Overachiever.");
-                    break;
-                case 5:
-                    Console.WriteLine("You cheated.");
-                    break;
-                default:
-                    Console.WriteLine("Invalid score entered.");
-                    break;
+                newBill = userBillTotal * .9;
+                Console.WriteLine("Your discounted total is now $" + newBill);
             }
+            else
+            {
+                newBill = userBillTotal * .95;
+                Console.WriteLine("Your discounted total is now $" + newBill);
+            }
+
+
 
 
 
